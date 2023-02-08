@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a<br><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <input type="number" id="pw-length" placeholder="4 to 15" min="4" max="15">
+        <button id="generate-pw-btn">Generate passwords</button>
+        <hr>
+        <div class="display">
+            <span id="display-pw1"></span>
+            <span id="display-pw2"></span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

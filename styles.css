@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background: rgb(154, 150, 136);
+}
+
+.container {
+    width: 400px;
+    height: 350px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background: rgb(31, 27, 48);
+    color: white;
+    margin: 50px auto;
+    padding: 50px 40px;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-bottom: 3px;
+}
+
+h1 span {
+    color: rgb(100, 208, 172);
+}
+
+p {
+    font-size: 1.3em;
+    margin-top: 3px;
+}
+
+#pw-length {
+    background: rgb(20, 57, 45);
+    margin-left: 5px;
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
+#generate-pw-btn {
+    padding: 7px 15px;
+    color: inherit;
+    background: rgb(59, 135, 110);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#display-pw1, #display-pw2 {
+    width: 43%;
+    height: 28px;
+    background: rgb(23, 21, 34);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
