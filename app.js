@@ -5,13 +5,15 @@ const generatPWBtn = document.querySelector('#generate-pw-btn');
 const displayPW1 = document.querySelector('#display-pw1');
 const displayPW2 = document.querySelector('#display-pw2');
 const pwLength = document.querySelector('#pw-length');
+let passwordOne = '';
+let passwordTwo = '';
 
 
 // Event listener for Generate password
 generatPWBtn.addEventListener('click', function() {
-            displayPW1.textContent = generatePasswordOne();
+            displayPW1.textContent = generatePassword(passwordOne);
 
-            displayPW2.textContent = generatePasswordTwo();
+            displayPW2.textContent = generatePassword(passwordTwo);
 });
 
 // Generating Random Character
@@ -21,37 +23,20 @@ function getRandomChar() {
 }
 
 // Generate password one
-function generatePasswordOne() {
-    let passwordOne = '';
+function generatePassword(password) {
+    password = '';
 
     if (pwLength.value === '') {
         for (let i = 0; i < 4; i++){
-            passwordOne += getRandomChar();
+            password += getRandomChar();
         }
     } else {
         for (let i = 0; i < pwLength.value; i++){
-            passwordOne += getRandomChar();
+            password += getRandomChar();
         }
     }
-    return passwordOne;
+    return password;
 }
-
-// Generate password 2
-function generatePasswordTwo() {
-    let passwordTwo = '';
-
-    if (pwLength.value === '') {
-        for (let i = 0; i < 4; i++){
-            passwordTwo += getRandomChar();
-        }
-    } else {
-        for (let i = 0; i < pwLength.value; i++){
-            passwordTwo += getRandomChar();
-        }
-    }
-    return passwordTwo;
-}
-
 
 
 
